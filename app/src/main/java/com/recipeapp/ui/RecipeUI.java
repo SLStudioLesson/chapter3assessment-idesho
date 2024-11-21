@@ -75,7 +75,6 @@ public class RecipeUI {
                         }
                     }
                     System.out.println();
-                    System.out.println("-----------------------------------");
                 }
             }
         } catch (IOException e) {
@@ -85,7 +84,7 @@ public class RecipeUI {
 
     // メニュー2: Add New Recipe
     private void addNewRecipe() {
-        try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
+        try {
             System.out.println("Adding a new recipe.");
 
             // レシピ名を入力
